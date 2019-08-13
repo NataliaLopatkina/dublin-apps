@@ -1,0 +1,8 @@
+@import "../information-item/information-item.css";
+@import "../active/active.css";
+
+.information {
+    &__content {
+        margin-bottom: 29px;
+    }
+}

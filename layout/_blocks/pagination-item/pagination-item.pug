@@ -1,0 +1,11 @@
+mixin pagination-item(item)
+    - var paginationActive = ""
+    if item.active
+        - paginationActive = " pagination-item--" + item.active
+
+    - var paginationSize = ""
+    if item.size
+        - paginationSize = " pagination-item--" + item.size
+
+    div(class="pagination-item" + paginationActive + paginationSize)
+        span(class="pagination-item__number") !{item.number}

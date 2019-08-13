@@ -1,0 +1,40 @@
+@import "../../_blocks/content/content.css";
+@import "../logo/logo.css";
+@import "../nav/nav.css";
+@import "../list/list.css";
+@import "../button-menu/button-menu.css";
+
+.header {
+    
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 36px;
+        padding-bottom: 20px;
+        margin-bottom: 18px;
+    }
+}
+
+@media (max-width: 998px) {
+    .header {
+        &__content {
+            align-items: flex-start;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        &__content {
+            flex-direction: column;
+            padding-bottom: 0;
+            margin-bottom: 20px;
+        }
+
+        &__actions {
+            display: flex;
+            width: 100%;
+        }
+    }
+}

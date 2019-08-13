@@ -1,0 +1,8 @@
+mixin product(item)
+    div(class="product")
+        img(class="product__img" src="images/i-pad/" + item.image + ".png" 
+        srcset="images/i-pad/" + item.image + "@2x" + ".png" + " 2x" alt="Product")
+        div(class="product__text-block")
+            p(class="subtitle subtitle--size-s product__title") !{item.title}
+            p(class="text text--size-xs product__text") !{item.text}
+            a(class="button button--size-xs button--color product__button") !{item.button}

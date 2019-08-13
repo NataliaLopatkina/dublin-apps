@@ -1,0 +1,15 @@
+@import "../newsletter/newsletter.css";
+@import "../contacts-form/contacts-form.css";
+@import "../field-text/field-text.css";
+@import "../form-button/form-button.css";
+
+.footer-form {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+    .footer-form {
+        flex-direction: column;
+    }
+}

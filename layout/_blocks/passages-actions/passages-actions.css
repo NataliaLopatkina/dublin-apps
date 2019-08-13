@@ -1,0 +1,77 @@
+.passages-actions {
+    width: 448px;
+    margin: 0 auto;
+    padding-bottom: 35px;
+
+    &__item {
+        margin-right: 80px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__button {
+        width: 96px;
+        height: 97px;
+        background: #3f3f4e;
+        border-radius: 50%;
+        position: relative;
+        cursor: pointer;
+        border: none;
+        outline: none;
+
+        &:after {
+            position: absolute;
+            content: url(../images/icons/shadow-actions.svg);
+            width: 78px;
+            left: 0;
+            right: 0;
+            margin: auto;
+            bottom: -30px;
+        }
+    }
+
+    &__img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+
+        &--play {
+            left: 14px;
+        }
+
+        &--i {
+            top: -3px;
+        }
+    }
+
+    &__icon-text {
+        font-family: "Consolas";
+        font-size: 85px;
+        color: #e7e8ea;
+    }
+}
+
+@media (max-width: 576px) {
+    .passages-actions {
+        width: 100%;
+
+        &__list {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__item {
+            margin: 0;
+            margin-bottom: 10px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

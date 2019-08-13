@@ -1,0 +1,21 @@
+mixin article(item)
+    article(class="article")&attributes(attributes)
+        img(class="article__img" src="images/article/" + item.photo + ".png" srcset="images/article/" + item.photo + "@2x" + ".png" + " 2x" alt="Article")
+        div(class="article__description")
+            div(class="article__header")
+                h2(class="subtitle article__title") !{item.title}
+                div(class="text text--size-xs article__information")
+                    time(class="article__date" datetime="2011-05-29") !{item.date}
+                    p(class="article__author") written by: !{item.author}
+
+            div(class="article__body")
+                p(class="text text--color article__text") !{item.text}
+
+            div(class="article__footer")
+                div(class="article__social")
+                    a(href="#5" class="article__link")
+                        img(class="article__icon" src="images/icons/twitter.svg" alt="Twitter")
+                    a(href="#5" class="article__link")
+                        img(class="article__icon" src="images/icons/facebook.svg" alt="Facebook")
+
+                a(class="button button--size-s article__button" href="blog-inner-page.html") Read more

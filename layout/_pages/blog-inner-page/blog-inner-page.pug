@@ -1,0 +1,248 @@
+extends ../../_blocks/template/template.pug
+
+block data
+
+    -
+        var data = {
+            nav: {
+                activeElement: "Demonstrations",
+            },
+        }
+
+block content
+    div(class="box")
+        include ../../_blocks/search/search.pug
+        -
+            var search = [
+                {
+                    title: "Dublin’s iphone apps Online Demmonstration",
+                    text: "Lorem Ipsum is simply dummy",
+                }
+            ]
+
+        each item in search
+            +search(item)
+
+        div(class="page-box")
+            div(class="article single-article")
+                div(class="single-article__header")
+                    div(class="single-article__info")
+                        h2(class="subtitle single-article__title") Dublin’s iphone apps Online Demo
+                        time(class="text single-article__date" datetime="29-05-2011") 29/may/2011 
+                        span(class="text text--size-xs single-article__author") written by: Anonimas
+
+                    div(class="article__social")
+                        a(class="article__link" href="#5")
+                            img(class="article__icon" src="images/icons/twitter.svg" alt="Twitter")
+                        a(class="article__link" href="#5")
+                            img(class="article__icon" src="images/icons/facebook.svg" alt="Facebook")
+
+                div(class="single-article__image-box")
+                    img(class="single-article__image" src="images/i-pad/passages-ipad.png" 
+                    srcset="images/i-pad/passages-ipad@2x.png 2x" alt="i-pad")
+
+                div(class="single-article__text-box")
+                    p(class="text text--color single-article__text") Lorem ipsum dolor sit amet, consectetuadipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliua. Ut enim ad minim veniam, quis nostud exercitation ullamco laboris nisi ut aluip ex ea commodo consequat. Duis aute irure dolor in esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    p(class="text text--color single-article__text") Lorem ipsum dolor sit amet, consectetuadipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliua. Ut enim ad minim veniam, quis nostud exercitation ullamco laboris nisi ut aluip ex ea commodo consequat. Duis aute irure dolor in esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetuadipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliua. Ut enim ad minim veniam, quis nostud exercitation ullamco laboris nisi ut aluip ex ea commodo consequat. Duis aute irure dolor in esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+
+                div(class="passages passages--blog")
+                    h3(class="subtitle passages__title") Dublin’s iphone apps Online Demo
+                    div(class="passages-list")
+                        include ../../_blocks/passages-item/passages-item.pug
+                        -
+                            var passages = [
+                                {
+                                    text: "Lorem Ipsum is simply dummy text of the printing and typesetting",
+                                },
+
+                                {
+                                    text: "Industry. Lorem Ipsum has been the industry's standard",
+                                },
+
+                                {
+                                    text: "Dummy text ever since the 1500s, when an unknown printer",
+                                },
+
+                                {
+                                    text: "Took a galley of type and scrambled it to make a type specimen book.",
+                                },
+
+                                {
+                                    text: "It has survived not only five centuries, but also the",
+                                },
+
+                                {
+                                    text: "Dummy text ever since the 1500s, when an unknown printer",
+                                },
+                            ]
+
+                        each item in passages
+                            +passages-item(item)
+
+                div(class="related-products")
+                    h3(class="subtitle related-products__title") Related Products
+                    p(class="text related-products__text") Lorem Ipsum is simply dummy
+                    div(class="related-products__content")
+                        include ../../_blocks/product/product.pug
+                        -
+                            var products = [
+                                {
+                                    image: "tabs-ipad",
+                                    title: "iphone apps",
+                                    text: "Lorem Ipsum is simply",
+                                    button: "Read More",
+                                },
+
+                                {
+                                    image: "tabs-ipad",
+                                    title: "iphone apps",
+                                    text: "Lorem Ipsum is simply",
+                                    button: "Read More",
+                                },
+
+                                {
+                                    image: "tabs-ipad",
+                                    title: "iphone apps",
+                                    text: "Lorem Ipsum is simply",
+                                    button: "Read More",
+                                },
+
+                                {
+                                    image: "tabs-ipad",
+                                    title: "iphone apps",
+                                    text: "Lorem Ipsum is simply",
+                                    button: "Read More",
+                                },
+                            ]
+
+                        each item in products
+                            +product(item)
+
+            div(class="sidebar")
+
+                -
+                    var list = [
+                        {
+                            title: "Slidebar",
+                            links: [
+                                {
+                                    name: "Lorem ipsum dolor",
+                                    url: "#5",
+                                },
+
+                                {
+                                    name: "Consectetuadipisicing",
+                                    url: "#5",
+                                },
+
+                                {
+                                    name: "Eiusmod",
+                                    url: "#5",
+                                },
+
+                                {
+                                    name: "Tempor incididunt",
+                                    url: "#5",
+                                },
+
+                                {
+                                    name: "Labore et dolore",
+                                    url: "#5",
+                                },
+
+                                {
+                                    name: "Magna aliua",
+                                    url: "#5",
+                                },
+
+                                {
+                                    name: "Ut enim ad minim",
+                                    url: "#5",
+                                },
+
+                                {
+                                    name: "Nostud exercitation",
+                                    url: "#5",
+                                },
+
+                                {
+                                    name: "Ullamco laboris",
+                                    url: "#5",
+                                },
+
+                                {
+                                    name: "Commodo consequ",
+                                    url: "#5",
+                                },
+                            ]
+                        },
+
+                        {
+                            title: "Slidebar",
+                            links: [
+                                {
+                                    name: "Lorem ipsum dolor",
+                                    url: "#5",
+                                },
+
+                                {
+                                    name: "Consectetuadipisicing",
+                                    url: "#5",
+                                },
+
+                                {
+                                    name: "Eiusmod",
+                                    url: "#5",
+                                },
+
+                                {
+                                    name: "Tempor incididunt",
+                                    url: "#5",
+                                },
+
+                                {
+                                    name: "Labore et dolore",
+                                    url: "#5",
+                                },
+
+                                {
+                                    name: "Magna aliua",
+                                    url: "#5",
+                                },
+
+                                {
+                                    name: "Ut enim ad minim",
+                                    url: "#5",
+                                },
+                            ]
+                        }
+                    ]
+
+                each block in list
+                    div(class="sidebar__item")
+                        h3(class="subtitle sidebar__title") !{block.title}
+                        ul(class="list sidebar__list-link")
+                            each item in block.links
+                                li(class="sidebar__item-link")
+                                    a(class="text text--color sidebar__link" href= item.url) !{item.name}
+
+                div(class="advertising")
+                    include ../../_blocks/advertising-item/advertising-item.pug
+                    -
+                        var advertising = [
+                            {
+                                text: "advertisement 193 x 110",
+                            },
+
+                            {
+                                text: "advertisement 193 x 110",
+                            },
+
+                            {
+                                text: "advertisement 193 x 110",
+                            },
+                        ]
+
+                    each item in advertising
+                        +advertising-item(item)

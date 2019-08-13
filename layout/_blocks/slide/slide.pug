@@ -1,0 +1,11 @@
+mixin slide(item)
+    div(class="slide")
+        div(class="slide__text-block")
+            h1(class="slide__title") !{item.title}
+            p(class="slide__subtitle") iPad 
+                span(class="slide__subtitle-apps") !{item.subtitle}
+            p(class="slide__text") !{item.text}
+            a(class="button button--size-l button--border slide__link" href="#5") Read more
+        div(class="slide__image-block")
+            img(class="slide__img" src="images/slider/" + item.image + ".png" 
+            srcset="images/slider/" + item.image + "@2x" + ".png" + " 2x" alt="ipad")

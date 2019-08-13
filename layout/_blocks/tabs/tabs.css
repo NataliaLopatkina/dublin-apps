@@ -1,0 +1,64 @@
+@import "../tab-content/tab-content.css";
+
+.tabs {
+    position: relative;
+    padding-bottom: 36px;
+
+    .tab {
+        display: none;
+
+        &.active {
+            display: flex;
+        } 
+    }
+
+    &__content {
+        padding: 17px 44px 24px 54px;
+    }
+
+    &__actions {
+        padding-left: 0;
+        background: #e9e9e9;
+        border-bottom: 1px solid #d5d4d4;
+        margin-left: 80px;
+        margin-right: 58px;
+    }
+
+    &__link {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: calc(18/18);
+        text-transform: capitalize;
+        color: #ffffff;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        background-image: linear-gradient(to top, #c0c0c0 0%, #d2d2d4 100%);
+        margin-right: 7px;
+        padding: 7px 19px 5px 18px;
+        border-radius: 8px 8px 0 0;
+        min-width: 106px;
+        display: inline-block;
+        box-sizing: border-box;
+        text-align: center;
+        position: relative;
+        z-index: 1000;
+
+        &--active {
+            background-image: linear-gradient(to top, #363647 0%, #48485c 100%);
+        } 
+    }
+}
+
+@media (max-width: 768px) {
+    .tabs {
+        &__actions {
+            padding-left: 10px;
+        }
+
+        &__content {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
+}

@@ -1,0 +1,7 @@
+mixin opportunity(item)
+    - var image = ""
+    if item.imageClass
+        - image = " opportunity--" + item.imageClass
+
+    div(class="opportunity" + image)
+        p(class="opportunity__title") !{item.title}

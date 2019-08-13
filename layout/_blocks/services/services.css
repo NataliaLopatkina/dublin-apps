@@ -1,0 +1,22 @@
+@import "../service/service.css";
+
+.services {
+    &__content {
+        max-width: 967px;
+        margin-bottom: 35px;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 998px) {
+    .services {
+        &__list {
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+    }
+}

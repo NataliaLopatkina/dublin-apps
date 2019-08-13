@@ -1,0 +1,215 @@
+@import "../subtitle/subtitle.css";
+@import "../passages-list/passages-list.css";
+
+.passages {
+
+    &__content {
+        margin-bottom: 45px;
+
+        &--indent {
+            margin-bottom: 39px;
+        }
+
+        &--variations {
+            margin-bottom: 0;
+            padding-bottom: 41px;
+
+            .passages__block-text {
+                width: 100%;
+            }
+
+            .passages__title {
+                margin: 0 auto;
+                padding-left: 138px;
+                width: 415px;
+            }
+
+            .passages__variation-block {
+                padding-left: 51px;
+            }
+
+            .passages__image-block {
+                margin-top: -15px;
+                margin-right: 113px;
+            }
+
+            .passages-list {
+                margin-top: 23px;
+                margin-bottom: 28px;
+            }
+        }
+    } 
+
+    &__block-text {
+        width: 415px;
+        text-align: left;
+        margin: 0 auto;
+
+        &--align {
+            text-align: center;
+        }
+    }
+
+    &__variation-block {
+        display: flex;
+        margin-top: -4px;
+        padding-left: 26px;
+    }
+
+    &__image-block {
+        margin-right: 58px;
+    }
+
+    &__button {
+        margin-right: 22px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &--l {
+            min-width: 130px;
+            box-sizing: border-box;
+        }
+    }
+
+    &--single-product {
+        padding-top: 53px;
+
+        .passages__content {
+            margin-bottom: 71px;
+            padding-left: 53px;
+        }
+    }
+
+    &--blog {
+        .passages-list {
+            padding-left: 38px;
+            margin-top: 19px;
+        }
+    }
+
+    &--product {
+        padding-left: 53px;
+
+        .passages-list {
+            margin-top: 16px;
+            padding-left: 21px;
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media (max-width: 998px) {
+    .passages {
+        &__variation-block {
+            align-items: center;
+            margin-top: 0;
+        }
+
+        &__img {
+            width: 250px;
+        }
+
+        &--product {
+            padding-left: 0;
+
+            .passages-list {
+                padding-left: 26px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .passages {
+        &__block-text {
+            width: 100%;
+            text-align: center;
+        }
+
+        &__image-block {
+            display: none;
+        }
+
+        &__variation {
+            width: 100%;
+        }
+
+        &__action {
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .passages {
+        &__content {
+            margin-bottom: 30px;
+        }
+
+        &__title {
+            line-height: calc(27/27);
+            margin-bottom: 10px;
+        }
+
+        &__variation-block {
+            padding-left: 0;
+        }
+
+        &__action {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        &__button {
+            margin-right: 0;
+        }
+    }
+}
+
+@media (max-width: 998px) {
+    .passages {
+        &__content--variations {
+            .passages__img {
+                width: auto;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .passages {
+        &--single-product {
+            .passages__content {
+                padding-left: 20px;
+            }
+        }
+
+        &__content--variations {
+            .passages__title {
+                padding: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .passages {
+        &--single-product {
+            .passages__content {
+                padding-left: 0;
+            }
+        }
+
+        &__content--variations {
+            .passages__variation-block {
+                padding-left: 0;
+            }
+            
+            .passages__title {
+                width: 100%;
+            }
+        }
+    }
+}

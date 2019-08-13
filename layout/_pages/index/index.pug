@@ -1,0 +1,222 @@
+extends ../../_blocks/template/template.pug
+
+block data
+
+    -
+        var data = {
+            nav: {
+                activeElement: "Home",
+            },
+        }
+
+block content   
+    div(class="slider")
+        div(class="content slider-controls slider__content")
+            include ../../_blocks/slide/slide.pug
+
+            -
+                var slides = [
+                    {
+                        title: "Dublin's",
+                        subtitle: "Apps",
+                        text: "Free and paid apps for your iPad",
+                        image: "slide-1",
+                    },
+
+                    {
+                        title: "Dublin's",
+                        subtitle: "Apps",
+                        text: "Free and paid apps for your iPad",
+                        image: "slide-1",
+                    },
+
+                    {
+                        title: "Dublin's",
+                        subtitle: "Apps",
+                        text: "Free and paid apps for your iPad",
+                        image: "slide-1",
+                    },
+
+                ]
+
+            each item in slides
+                +slide(item)
+
+    div(class="opportunities")
+        div(class="content opportunities__content")
+            div(class="opportunities__list")
+
+                include ../../_blocks/opportunity/opportunity
+                -
+                    var opportunities = [
+                        {
+                            title: "E Book Reader pro",
+                            imageClass: "book-reader",
+                        },
+
+                        {
+                            title: "Image viewer pro",
+                            imageClass: "image-viewer",
+                        },
+
+                        {
+                            title: "Media mannager",
+                            imageClass: "media",
+                        },
+
+                        {
+                            title: "Leo Entertainment",
+                            imageClass: "entertainment",
+                        },
+                    ]
+
+                each item in opportunities
+                    +opportunity(item)
+
+    section(class="services")
+        div(class="content services__content")
+            h2(class="visually-hidden") Services
+            div(class="services__list")
+
+                include ../../_blocks/service/service.pug
+                -
+                    var services = [
+                        {
+                            icon: "discover",
+                            title: "Discover Apps",
+                            text: "Lorem Ipsum is simply dummy",
+                            information: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever sinc",
+                        },
+
+                        {
+                            icon: "browse",
+                            title: "Browse Apps",
+                            text: "Lorem Ipsum is simply dummy",
+                            information: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever sinc",
+                        },
+
+                        {
+                            icon: "develop",
+                            title: "Development",
+                            text: "Lorem Ipsum is simply dummy",
+                            information: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever sinc",
+                        },
+                    ]
+
+                each item in services
+                    +service(item)
+
+    section(class="news")
+        h3(class="visually-hidden") News
+        div(class="content news__content")
+            include ../../_blocks/new/new.pug
+
+            -
+                var news = [
+                    {
+                        text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+                        textSecond: "Lorem",
+                        features: " Ipsum has been the industry's",
+                        textThird: " standard dummy text",
+                    },
+
+                    {
+                        text: "Lorem Ipsum is simply dummy text.",
+                        textSecond: "Lorem",
+                        features: " Ipsum has been the industry's",
+                        textThird: " standard dummy text",
+                    },
+
+                    {
+                        text: "Lorem Ipsum is simply dummy text of the printing and typesetting.",
+                        textSecond: "Lorem",
+                        features: " Ipsum has been the industry's",
+                        textThird: " standard dummy text",
+                    },
+                ]
+
+            each item in news
+                +new(item)
+
+            a(class="news__slide-control news__slide-control--prev")
+            a(class="news__slide-control news__slide-control--next")
+
+    div(class="passages")
+        div(class="content passages__content")
+            div(class="passages__block-text")
+                h2(class="subtitle passages__title") There are many variations of passages
+                p(class="text passages__text") Lorem Ipsum is simply dummy
+
+            div(class="passages__variation-block")
+                div(class="passages__image-block")
+                    img(class="passages__img" src="images/i-pad/passages-ipad.png" 
+                    srcset="images/i-pad/passages-ipad@2x.png 2x" alt="ipad")
+
+                div(class="passages__variation")    
+                    div(class="passages-list")
+                        include ../../_blocks/passages-item/passages-item.pug
+                        
+                        -
+                            var passages = [
+                                {
+                                    text: "Lorem Ipsum is simply dummy text of the printing and typesetting",
+                                },
+
+                                {
+                                    text: "Industry. Lorem Ipsum has been the industry's standard",
+                                },
+
+                                {
+                                    text: "Dummy text ever since the 1500s, when an unknown printer",
+                                },
+
+                                {
+                                    text: "Took a galley of type and scrambled it to make a type specimen book.",
+                                },
+
+                                {
+                                    text: "It has survived not only five centuries, but also the",
+                                }
+                            ]
+
+                        each item in passages
+                            +passages-item(item)
+
+                    div(class="passages__action")
+                        a(href="" class="button button--size-m passages__button") Read more
+                        button(type="button" class="button button--size-m passages__button") Download        
+
+    div(class="information")
+        div(class="content information__content")
+            include ../../_blocks/information-item/information-item.pug
+
+            -
+                var information = [
+                    {
+                        text: "Lorem Ipsum is simply dummy text of the printing and typesetting Industry. Lorem Ipsum has been the industry's standard",
+                        description: "Lorem Ipsum is simply dummy text of the printing and typesetting Industry. Lorem Ipsum has been the industry's standard",
+                    },
+
+                    {
+                        text: "Dummy text ever since the 1500s, when an unknown printer Took a galley of type and scrambled it to make a type specimen book.",
+                        description: "Dummy text ever since the 1500s, when an unknown printer Took a galley of type and scrambled it to make a type specimen book.",
+                    },
+
+                    {
+                        text: "It has survived not only five centuries, but also the",
+                        description: "It has survived not only five centuries, but also the",
+                    },
+
+                    {
+                        text: "Lorem Ipsum is simply dummy text of the printing and typesetting Industry. Lorem Ipsum has been the industry's standard",
+                        description: "Lorem Ipsum is simply dummy text of the printing and typesetting Industry. Lorem Ipsum has been the industry's standard",
+                    },
+
+                    {
+                        text: "Dummy text ever since the 1500s, when an unknown printer Took a galley of type and scrambled it to make a type specimen book.",
+                        description: "Dummy text ever since the 1500s, when an unknown printer Took a galley of type and scrambled it to make a type specimen book.",
+                    },
+                ]
+            
+            each item in information
+                +information-item(item)

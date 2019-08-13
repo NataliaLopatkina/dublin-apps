@@ -1,0 +1,18 @@
+@import "../passages-item/passages-item.css";
+
+.passages-list {
+    margin-top: 41px;
+    margin-bottom: 23px;
+}
+
+@media (max-width: 768px) {
+    .passages-list {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .passages-list {
+        padding-left: 26px;
+    }
+}

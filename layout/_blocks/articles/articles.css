@@ -1,0 +1,20 @@
+@import "../article/article.css";
+
+.articles {
+    padding-top: 23px;
+    padding-left: 31px;
+    max-width: 714px;
+    width: 100%;
+    box-sizing: border-box;
+
+    .articles__pagination {
+        margin-top: -13px;
+        margin-bottom: 38px;
+    }
+}
+
+@media (max-width: 998px) {
+    .articles {
+        padding-left: 0;
+    }
+}

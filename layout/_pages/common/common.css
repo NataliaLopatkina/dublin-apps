@@ -1,0 +1,49 @@
+@import "../../_blocks/normalize/normalize.css";
+@import "../../_blocks/reset/reset.css";
+
+/*! Styles */
+@import "../../_blocks/global/global.css";
+@import "../../_blocks/header/header.css";
+@import "../../_blocks/slider/slider.css";
+@import "../../_blocks/opportunities/opportunities.css";
+@import "../../_blocks/services/services.css";
+@import "../../_blocks/news/news.css";
+@import "../../_blocks/passages/passages.css";
+@import "../../_blocks/information/information.css";
+@import "../../_blocks/footer/footer.css";
+
+/* Page products */
+
+@import "../../_blocks/search/search.css";
+@import "../../_blocks/slider-products/slider-products.css";
+@import "../../_blocks/tabs/tabs.css";
+
+/* Page single product */
+
+@import "../../_blocks/box/box.css";
+@import "../../_blocks/steps-passages/steps-passages.css";
+
+/* Page blog */
+
+@import "../../_blocks/articles/articles.css";
+@import "../../_blocks/page-box/page-box.css";
+@import "../../_blocks/sidebar/sidebar.css";
+@import "../../_blocks/pagination/pagination.css";
+
+/* Blog inner page */
+
+@import "../../_blocks/single-article/single-article.css";
+@import "../../_blocks/related-products/related-products.css";
+
+/* Product inner page */
+
+@import "../../_blocks/product-sale/product-sale.css";
+
+/* Modal window */
+
+@import "../../_blocks/modal-payment/modal-payment.css";
+@import "../../_blocks/modal-operation/modal-operation.css";
+
+/* Contacts */
+
+@import "../../_blocks/contacts/contacts.css";

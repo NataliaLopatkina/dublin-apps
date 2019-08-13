@@ -1,0 +1,248 @@
+extends ../../_blocks/template/template.pug
+
+block data
+
+    -
+        var data = {
+            nav: {
+                activeElement: "Demonstrations",
+            },
+        }
+
+block content
+    div(class="box")
+        include ../../_blocks/search/search.pug
+        -
+            var search = [
+                {
+                    title: "Dublin’s iphone apps Online Demmonstration",
+                    text: "Lorem Ipsum is simply dummy",
+                }
+            ]
+
+        each item in search
+            +search(item)
+
+        div(class="page-box")
+            div(class="articles")
+                include ../../_blocks/article/article.pug
+                -
+                    var articles = [
+                        {
+                            photo: "article-img",
+                            title: "Dublin’s iphone apps Online Demo",
+                            date: "29 / may / 2011",
+                            author: "Anonimas",
+                            text: "Lorem ipsum dolor sit amet, consectetuadipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliua. Ut enim ad minim veniam, quis nostud exercitation ullamco laboris nisi ut aluip ex ea commodo consequat. Duis aute irure dolor in",
+                        },
+
+                        {
+                            photo: "article-img",
+                            title: "Dublin’s iphone apps Online Demo",
+                            date: "29 / may / 2011",
+                            author: "Anonimas",
+                            text: "Lorem ipsum dolor sit amet, consectetuadipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliua. Ut enim ad minim veniam, quis nostud exercitation ullamco laboris nisi ut aluip ex ea commodo consequat. Duis aute irure dolor in",
+                        },
+
+                        {
+                            photo: "article-img",
+                            title: "Dublin’s iphone apps Online Demo",
+                            date: "29 / may / 2011",
+                            author: "Anonimas",
+                            text: "Lorem ipsum dolor sit amet, consectetuadipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliua. Ut enim ad minim veniam, quis nostud exercitation ullamco laboris nisi ut aluip ex ea commodo consequat. Duis aute irure dolor in",
+                        },
+
+                        {
+                            photo: "article-img",
+                            title: "Dublin’s iphone apps Online Demo",
+                            date: "29 / may / 2011",
+                            author: "Anonimas",
+                            text: "Lorem ipsum dolor sit amet, consectetuadipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliua. Ut enim ad minim veniam, quis nostud exercitation ullamco laboris nisi ut aluip ex ea commodo consequat. Duis aute irure dolor in",
+                        },
+
+                        {
+                            photo: "article-img",
+                            title: "Dublin’s iphone apps Online Demo",
+                            date: "29 / may / 2011",
+                            author: "Anonimas",
+                            text: "Lorem ipsum dolor sit amet, consectetuadipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliua. Ut enim ad minim veniam, quis nostud exercitation ullamco laboris nisi ut aluip ex ea commodo consequat. Duis aute irure dolor in",
+                        },
+                    ]
+
+                each item in articles
+                    +article(item)(class="article--indent")
+
+                div(class="pagination articles__pagination")
+                    include ../../_blocks/pagination-item/pagination-item.pug
+                    -
+                        var paginations = [
+                            {
+                                number: "&laquo; First",
+                                size: "size",
+                            },
+
+                            {
+                                number: "&laquo;",
+                            },
+
+                            {
+                                number: "1",
+                            },
+
+                            {
+                                number: "2",
+                            },
+
+                            {
+                                number: "3",
+                                active: "active",
+                            },
+                            
+                            {
+                                number: "4",
+                            },
+
+                            {
+                                number: "5",
+                            },
+
+                            {
+                                number: "&raquo;",
+                            },
+
+                            {
+                                number: "Last &raquo;",
+                                size: "size",
+                            },
+                        ]
+
+                    each item in paginations
+                        +pagination-item(item)
+
+            div(class="sidebar")
+
+                -
+                    var list = [
+                        {
+                            title: "Slidebar",
+                            links: [
+                                {
+                                    name: "Lorem ipsum dolor",
+                                    url: "#5",
+                                },
+
+                                {
+                                    name: "Consectetuadipisicing",
+                                    url: "#5",
+                                },
+
+                                {
+                                    name: "Eiusmod",
+                                    url: "#5",
+                                },
+
+                                {
+                                    name: "Tempor incididunt",
+                                    url: "#5",
+                                },
+
+                                {
+                                    name: "Labore et dolore",
+                                    url: "#5",
+                                },
+
+                                {
+                                    name: "Magna aliua",
+                                    url: "#5",
+                                },
+
+                                {
+                                    name: "Ut enim ad minim",
+                                    url: "#5",
+                                },
+
+                                {
+                                    name: "Nostud exercitation",
+                                    url: "#5",
+                                },
+
+                                {
+                                    name: "Ullamco laboris",
+                                    url: "#5",
+                                },
+
+                                {
+                                    name: "Commodo consequ",
+                                    url: "#5",
+                                },
+                            ]
+                        },
+
+                        {
+                            title: "Slidebar",
+                            links: [
+                                {
+                                    name: "Lorem ipsum dolor",
+                                    url: "#5",
+                                },
+
+                                {
+                                    name: "Consectetuadipisicing",
+                                    url: "#5",
+                                },
+
+                                {
+                                    name: "Eiusmod",
+                                    url: "#5",
+                                },
+
+                                {
+                                    name: "Tempor incididunt",
+                                    url: "#5",
+                                },
+
+                                {
+                                    name: "Labore et dolore",
+                                    url: "#5",
+                                },
+
+                                {
+                                    name: "Magna aliua",
+                                    url: "#5",
+                                },
+
+                                {
+                                    name: "Ut enim ad minim",
+                                    url: "#5",
+                                },
+                            ]
+                        }
+                    ]
+
+                each block in list
+                    div(class="sidebar__item")
+                        h3(class="subtitle sidebar__title") !{block.title}
+                        ul(class="list sidebar__list-link")
+                            each item in block.links
+                                li(class="sidebar__item-link")
+                                    a(class="text text--color sidebar__link" href= item.url) !{item.name}
+
+                div(class="advertising")
+                    include ../../_blocks/advertising-item/advertising-item.pug
+                    -
+                        var advertising = [
+                            {
+                                text: "advertisement 193 x 110",
+                            },
+
+                            {
+                                text: "advertisement 193 x 110",
+                            },
+
+                            {
+                                text: "advertisement 193 x 110",
+                            },
+                        ]
+
+                    each item in advertising
+                        +advertising-item(item)

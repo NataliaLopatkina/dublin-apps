@@ -1,0 +1,32 @@
+.pagination-item {
+    padding: 2px 8px;
+    margin-right: 18px;
+    border: 1px solid #5f7380;
+    background-image: linear-gradient(to top, #424255 0%, #67677f 100%);
+    border-radius: 2px;
+
+    &--active {
+        background-image: linear-gradient(to top, #244c89 0%, #2c69bf 100%);
+    }
+
+    &--size {
+        padding: 2px 14px;
+    }
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    &__number {
+        font-family: "Arial";
+        font-size: 11px;
+        font-weight: 400;
+        color: #ffffff;
+    }
+}
+
+@media (max-width: 576px) {
+    .pagination-item {
+        margin-bottom: 10px;
+    }
+}

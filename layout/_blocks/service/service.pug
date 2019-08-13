@@ -1,0 +1,11 @@
+mixin service(item)
+    div(class="service")
+        div(class="service__header")
+            div(class="service__img")
+                svg(class="service__icon")
+                    use(xlink:href="images/svg-sprite/svg-sprite.svg#" + item.icon)
+            div(class="service__description")
+                p(class="subtitle subtitle--size-m service__title") !{item.title}
+                p(class="text service__text") !{item.text}
+        div(class="service__body")
+            p(class="text text--size-m text--color service__information") !{item.information}

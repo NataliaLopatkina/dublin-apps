@@ -1,0 +1,125 @@
+/* fonts */
+
+@font-face {
+    font-family: "Flare";
+    src: url("../../fonts/Flare/FlareLightGothic.woff2") format("woff2"),
+        url("../../fonts/Flare/FlareLightGothic.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Fraklin";
+    src: url("../../fonts/Fraklin/FranklinGothic-Book.woff2") format("woff2"),
+        url("../../fonts/Fraklin/FranklinGothic-Book.woff") format("woff");
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Colaborate";
+    src: url("../../fonts/Colaborate/Colaborate-Medium.woff2") format("woff2"),
+        url("../../fonts/Colaborate/Colaborate-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Colaborate";
+    src: url("../../fonts/Colaborate/colaborate-regular.woff2") format("woff2"),
+        url("../../fonts/Colaborate/colaborate-regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Colaborate";
+    src: url("../../fonts/Colaborate/colaborate-light.woff2") format("woff2"),
+        url("../../fonts/Colaborate/colaborate-light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Colaborate";
+    src: url("../../fonts/Colaborate/Colaborate-Thin.woff2") format("woff2"),
+        url("../../fonts/Colaborate/Colaborate-Thin.woff") format("woff");
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "ChunkFive";
+    src: url("../../fonts/ChunkFive/ChunkFive.woff2") format("woff2"),
+        url("../../fonts/ChunkFive/ChunkFive.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Alexandria";
+    src: url("../../fonts/Alexandria/AlexandriaFLF.woff2") format("woff2"),
+        url("../../fonts/Alexandria/AlexandriaFLF.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Alexandria";
+    src: url("../../fonts/Alexandria/AlexandriaFLF-Bold.woff2") format("woff2"),
+        url("../../fonts/Alexandria/AlexandriaFLF-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Contra";
+    src: url("../../fonts/Contra/Contra.woff2") format("woff2"),
+        url("../../fonts/Contra/Contra.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Contra";
+    src: url("../../fonts/Contra/Contra-Italic.woff2") format("woff2"),
+        url("../../fonts/Contra/Contra-Italic.woff") format("woff");
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Helvetica";
+    src: url("../../fonts/Helvetica/Helvetica-Regular.woff2") format("woff2"),
+        url("../../fonts/Helvetica/Helvetica-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Freeport";
+    src: url("../../fonts/Freeport/FreeportPlain.woff2") format("woff2"),
+        url("../../fonts/Freeport/FreeportPlain.woff") format("woff");
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Consolas";
+    src: url("../../fonts/Consolas/Consolas.woff2") format("woff2"),
+        url("../../fonts/Consolas/Consolas.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    font-family: "Colaborate", "Arial", sans-serif;
+    /* background: #d3d3d3; */
+    background: url("../images/background/bg.jpg") no-repeat center;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+
+a {
+    text-decoration: none;
+}

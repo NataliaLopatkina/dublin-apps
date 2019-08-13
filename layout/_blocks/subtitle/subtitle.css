@@ -1,0 +1,24 @@
+.subtitle {
+    font-size: 27px;
+    font-weight: 300;
+    line-height: calc(23/27);
+    color: #505050;
+    margin: 0;
+
+    &--size-l {
+        font-size: 31px;
+        line-height: calc(23/31);
+    }
+
+    &--size-m {
+        font-size: 25px;
+    }
+
+    &--size-s {
+        font-size: 23px;
+    }
+
+    &--size-xs {
+        font-size: 21px;
+    }
+}

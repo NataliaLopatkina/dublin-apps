@@ -1,0 +1,9 @@
+.page-box {
+    display: flex;
+}
+
+@media (max-width: 768px) {
+    .page-box {
+        flex-direction: column;
+    }
+}

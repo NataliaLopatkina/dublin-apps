@@ -1,0 +1,76 @@
+extends ../../_blocks/template/template.pug
+
+block data
+
+    -
+        var data = {
+            nav: {
+                activeElement: "ipad apps",
+            },
+        }
+
+block content
+    div(class="box")
+        include ../../_blocks/search/search.pug
+        -
+            var search = [
+                {
+                    title: "Dublin’s iphone applications",
+                    text: "Lorem Ipsum is simply dummy",
+                },
+            ]
+
+        each item in search
+            +search(item)
+
+        div(class="product-sale")
+            h2(class="subtitle subtitle--size-l product-sale__title") Dublin’s iphone applications
+            p(class="text product-sale__text") Lorem Ipsum is simply dummy
+            div(class="product-sale__image-block")
+                img(class="product-sale__img" src="images/i-pad/sale-ipad.png" srcset="images/i-pad/sale-ipad@2x.png 2x" alt="i-pad")
+                div(class="product-sale__price-block")
+                    div(class="product-sale__text-block")
+                        p(class="product-sale__price") 250$
+                        p(class="product-sale__offer") Special Season Offer
+            a(href="#5" class="button button--size-m product-sale__link-buy") Buy now
+
+            div(class="product-sale__description")
+                h3(class="subtitle subtitle--size-l product-sale__description-title") Dublin’s iphone applications
+                p(class="text text--color product-sale__description-text") Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                div(class="passages passages--product")
+                    h3(class="subtitle subtitle--size-l passages__title") Dublin’s iphone applications
+                    div(class="passages-list")
+                        include ../../_blocks/passages-item/passages-item.pug
+                        -
+                            var passages = [
+                                {
+                                    text: "Lorem Ipsum is simply dummy text of the printing and typesetting",
+                                },
+
+                                {
+                                    text: "Industry. Lorem Ipsum has been the industry's standard",
+                                },
+
+                                {
+                                    text: "Dummy text ever since the 1500s, when an unknown printer",
+                                },
+
+                                {
+                                    text: "Took a galley of type and scrambled it to make a type specimen book.",
+                                },
+
+                                {
+                                    text: "It has survived not only five centuries, but also the",
+                                },
+
+                                {
+                                    text: "Dummy text ever since the 1500s, when an unknown printer",
+                                },
+                            ]
+
+                        each item in passages
+                            +passages-item(item)
+
+block modal-window
+    include ../../_blocks/modal-payment/modal-payment.pug
+    include ../../_blocks/modal-operation/modal-operation.pug

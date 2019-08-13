@@ -1,0 +1,19 @@
+@import "../registration-form/registration-form.css";
+@import "../location/location.css";
+
+.contacts {
+    display: flex;
+    padding: 57px 42px 74px 64px;
+}
+
+@media (max-width: 998px) {
+    .contacts {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contacts {
+        flex-direction: column;
+    }
+}

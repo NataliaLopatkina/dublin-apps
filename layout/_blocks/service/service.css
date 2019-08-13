@@ -1,0 +1,51 @@
+@import "../visually-hidden/visually-hidden.css";
+@import "../text/text.css";
+
+.service {
+    width: 294px;
+
+    &__header {
+        display: flex;
+        margin-bottom: 12px;
+    }
+
+    &__icon {
+        width: 33px;
+        height: 33px;
+        margin-right: 8px;
+    }
+
+    &__information {
+        width: 290px;
+    }
+}
+
+@media (max-width: 998px) {
+    .service {
+        margin-bottom: 20px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .service {
+        width: 500px;
+        text-align: center;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &__header {
+            display: inline-flex;
+        }
+
+        &__information {
+            width: 100%;
+        }
+
+    }
+}

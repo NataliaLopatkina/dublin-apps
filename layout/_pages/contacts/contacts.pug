@@ -1,0 +1,49 @@
+extends ../../_blocks/template/template.pug
+
+block data
+
+    -
+        var data = {
+            nav: {
+                activeElement: "Connect us",
+            },
+        }
+
+block content
+    div(class="box")
+        include ../../_blocks/search/search.pug
+        -
+            var search = [
+                {
+                    title: "Keep in touch with us",
+                    text: "Lorem Ipsum is simply dummy",
+                },
+            ]
+
+        each item in search
+            +search(item)
+
+        div(class="contacts")
+            div(class="registration-form")
+                form(class="registration-form__form" method="post" action="#5")
+                    input(class="registration-form__field" type="text" placeholder="Your name")
+                    input(class="registration-form__field" type="text" placeholder="email address")
+                    input(class="registration-form__field" type="text" placeholder="Phone number")
+                    textarea(class="registration-form__field registration-form__field--multiline" placeholder="Your message")
+                    button(type="submit" class="button button--size-m registration-form__button") Submit
+
+            div(class="location")
+                div(class="location__address")
+                    h2(class="subtitle subtitle--size-xs location__title") Dublin i Pad Applications
+                    p(class="text text--size-l text--color location__text") Lorem Ipsum simply, dummytext printing
+                    div(class="location__email")
+                        span(class="text text--size-l text--color location__email-text") email:
+                            a(class="text text--size-l text--color location__email-link location__email-link--first" href="mailto:mail@yourdomainname.com") mail@yourdomainname.com
+                        a(class="text text--size-l text--color location__email-link location__email-link--second" href="mailto:info@yourdomainname.com") :info@yourdomainname.com
+                    div(class="location__phone")
+                        span(class="text text--size-l text--color location__phone-text") Phone:
+                        a(class="text text--size-l text--color location__phone-link" href="tel:+9954412477") +99 54412477,
+                        a(class="text text--size-l text--color location__phone-link" href="tel:+99984561142") +99 984561142
+
+                div(class="location__map")
+                    img(class="location__map-img" src="images/map/map.jpg" srcset="images/map/map@2x.jpg 2x" alt="Map")

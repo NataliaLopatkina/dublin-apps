@@ -1,0 +1,9 @@
+mixin search(item)
+    div(class="search")
+        div(class="search__content")
+            div(class="search__text-block")
+                h1(class="subtitle search__title") !{item.title}
+                p(class="text search__text") !{item.text}
+            div(class="search__block-field")
+                img(class="search__icon" src="images/icons/search.svg" alt="Search")
+                input(class="search__field" placeholder="Search...")

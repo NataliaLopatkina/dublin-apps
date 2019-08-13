@@ -1,0 +1,25 @@
+@import "../opportunity/opportunity.css";
+
+.opportunities {
+    &__content {
+        overflow: hidden;
+    }
+
+    &__list {
+        display: flex;
+        margin: -7px;
+        justify-content: space-between;
+        margin-bottom: 39px;
+        margin-top: 5px;
+    }
+}
+
+@media (max-width: 768px) {
+    .opportunities {
+
+        &__list {
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+    }
+}

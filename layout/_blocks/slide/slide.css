@@ -1,0 +1,87 @@
+.slide {
+    display: flex;
+    justify-content: center;
+
+    &__text-block {
+        margin-right: 39px;
+        text-align: right;
+        margin-top: 43px;
+    }
+
+    &__title {
+        font-family: "ChunkFive", "Arial", sans-serif;
+        font-size: 45px;
+        font-weight: 400;
+        line-height: calc(52/45);
+        color: #e7e8ea;
+        text-transform: uppercase;
+        margin: 0;
+    }
+
+    &__subtitle {
+        font-family: "Alexandria", "Time New Romans", serif;
+        font-size: 39px;
+        font-weight: 400;
+        line-height: calc(42/39);
+        color: #d7d7e3;
+        margin: 0;
+    }
+
+    &__subtitle-apps {
+        font-weight: 700;
+    }
+
+    &__text {
+        font-size: 23px;
+        font-weight: 100;
+        color: #e7e8ea;
+        max-width: 166px;
+        margin: 0;
+        margin-top: 6px;
+        margin-bottom: 30px;
+        margin-left: auto;
+    }
+
+    &__link {
+        position: relative;
+
+        &:after {
+            position: absolute;
+            content: url("../images/icons/shadow-button.svg");
+            left: 0;
+            bottom: -50px;
+        }
+    }
+}
+
+@media (max-width: 998px) {
+    .slide {
+        &__text-block {
+            margin-top: 20px;
+        }
+        
+        &__img {
+            width: 390px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .slide {
+        &__image-block {
+            display: none;
+        }
+
+        .slide__text-block {
+            width: 420px;
+            text-align: center;
+            margin-top: 0;
+            margin-right: 0;
+        }
+
+        &__text {
+            text-align: center;
+            max-width: 500px;
+        }
+    }
+}

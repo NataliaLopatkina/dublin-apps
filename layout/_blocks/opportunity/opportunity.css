@@ -1,0 +1,94 @@
+.opportunity {
+    border: 3px solid #ffffff;
+    margin: 7px;
+    width: 240px;
+    height: 149px;
+    border-radius: 8px;
+    text-align: center;
+    background: #e4e4e4;
+    background-repeat: no-repeat;
+
+    &__title {
+        font-family: "Calibri", sans-serif;
+        font-size: 19px;
+        font-weight: 400;
+        color: #a5a5a9;
+        margin: 0;
+        padding-top: 122px;
+    }
+
+    &--book-reader {
+        background-image: url("../images/opportunities/ipad.png"); 
+        background-position: 82px 6px;
+    }
+
+    &--image-viewer {
+        background-image: url("../images/opportunities/image-viewer.png");
+        background-position: 23px 8px;
+    }
+
+    &--media {
+        background-image: url("../images/opportunities/media.png");
+        background-position: 60px 20px;
+    }
+
+    &--entertainment {
+        background-image: url("../images/opportunities/entertainment.png");
+        background-position: 44px 8px;
+        position: relative;
+
+        &:after {
+            position: absolute;
+            content: "";
+            background: svg-load("../../images/icons/new.svg");
+            width: 58px;
+            height: 55px;
+            top: -3px;
+            right: -3px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    div.opportunity {
+        
+        &--book-reader {
+            background-position: 89px 6px;
+        }
+
+        &--image-viewer {
+            background-position: 23px 6px;
+        }
+
+        &--media {
+            background-position: 58px 14px;
+        }
+
+        &--entertainment {
+            background-position: 47px 12px;
+        }
+    }
+}
+
+@media (max-width: 998px) {
+    .opportunity {
+        
+        &--book-reader {
+            background-position: 25px 6px;
+        }
+
+        &--image-viewer {
+            background-position: -8px 6px;
+        }
+
+        &--media {
+            background-position: 23px 6px;
+        }
+
+        &--entertainment {
+            background-position: 12px 6px;
+        }
+    }
+}
+
+

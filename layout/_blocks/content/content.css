@@ -1,0 +1,31 @@
+.content {
+    width: 998px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1018px) {
+    .content {
+        width: 998px;
+        padding-left: 10px;
+        padding-right: 10px;
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width: 998px) {
+    .content {
+        width: 768px;
+    }
+}
+
+@media (max-width: 768px) {
+    div.content {
+        width: 576px;
+    }
+}
+
+@media (max-width: 576px) {
+    div.content {
+        width: 320px;
+    }
+}

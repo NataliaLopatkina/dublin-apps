@@ -1,0 +1,80 @@
+extends ../../_blocks/template/template.pug
+
+block data
+
+    -
+        var data = {
+            nav: {
+                activeElement: "ipad apps",
+            },
+        }
+
+block content
+    div(class="box")
+        h3(class="visually-hidden") Catalog of products
+        include ../../_blocks/search/search.pug
+        -
+            var search = [
+                {
+                    title: "Dublin’s iphone applications",
+                    text: "Lorem Ipsum is simply dummy",
+                }
+            ]
+
+        each item in search
+            +search(item)
+            
+
+        div(class="slider-products slider-controls")
+            include ../../_blocks/product-item/product-item.pug
+
+            -
+                var products = [
+                    {
+                        image: "ipad-1",
+                        title: "ipad image viewer",
+                        text: "Lorem Ipsum is simply",
+                    },
+
+                    {
+                        image: "ipad-2",
+                        title: "ipad image viewer",
+                        text: "Lorem Ipsum is simply",
+                    },
+
+                    {
+                        image: "ipad-1",
+                        title: "ipad image viewer",
+                        text: "Lorem Ipsum is simply",
+                    },
+
+                    {
+                        image: "ipad-1",
+                        title: "ipad image viewer",
+                        text: "Lorem Ipsum is simply",
+                    },
+
+                    {
+                        image: "ipad-1",
+                        title: "ipad image viewer",
+                        text: "Lorem Ipsum is simply",
+                    },
+                ]
+
+            each item in products
+                +product-item(item)
+
+        div(class="tabs")
+            div(class="tabs__actions")
+                span(class="tabs__link tabs__link--active") Most popular
+                span(class="tabs__link") Recent
+                //- input(type="radio" id="tab1" name="tab-group" checked)
+                //- label(for="tab1" class="tabs__link tabs__link--active") Most popular
+                //- input(type="radio" id="tab2" name="tab-group")
+                //- label(for="tab2" class="tabs__link") Recent
+            div(class="tabs__content")
+                include ../../_blocks/tab-content/tab-content.pug
+                +tab-content(item)(class="active")
+
+                div(class="tab-content")
+                    span Содержимое второй вкладки

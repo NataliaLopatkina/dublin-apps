@@ -1,0 +1,71 @@
+mixin tab-content(item)
+    div(class="tab-content")&attributes(attributes)
+        include ../../_blocks/product/product.pug
+        -
+            var tabContent = [
+                {
+                    image: "tabs-ipad",
+                    title: "iphone apps",
+                    text: "Lorem Ipsum is simply",
+                    button: "Read More",
+                },
+
+                {
+                    image: "tabs-ipad",
+                    title: "iphone apps",
+                    text: "Lorem Ipsum is simply",
+                    button: "Read More",
+                },
+
+                {
+                    image: "tabs-ipad",
+                    title: "iphone apps",
+                    text: "Lorem Ipsum is simply",
+                    button: "Read More",
+                },
+
+                {
+                    image: "tabs-ipad",
+                    title: "iphone apps",
+                    text: "Lorem Ipsum is simply",
+                    button: "Read More",
+                },
+                
+                {
+                    image: "tabs-ipad",
+                    title: "iphone apps",
+                    text: "Lorem Ipsum is simply",
+                    button: "Read More",
+                },
+
+                {
+                    image: "tabs-ipad",
+                    title: "iphone apps",
+                    text: "Lorem Ipsum is simply",
+                    button: "Read More",
+                },
+
+                {
+                    image: "tabs-ipad",
+                    title: "iphone apps",
+                    text: "Lorem Ipsum is simply",
+                    button: "Read More",
+                },
+
+                {
+                    image: "tabs-ipad",
+                    title: "iphone apps",
+                    text: "Lorem Ipsum is simply",
+                    button: "Read More",
+                },
+
+                {
+                    image: "tabs-ipad",
+                    title: "iphone apps",
+                    text: "Lorem Ipsum is simply",
+                    button: "Read More",
+                },
+            ]
+
+        each item in tabContent
+            +product(item)

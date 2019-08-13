@@ -1,0 +1,81 @@
+@import "../new/new.css";
+
+.news {
+    &__content {
+        background: #ecedef;
+        position: relative;
+        margin-bottom: 42px;
+        box-sizing: border-box;
+    }
+
+    &__slide-control {
+        position: absolute;
+        width: 22px;
+        height: 27px;
+        top: 50%;
+        margin-top: -14px;
+        cursor: pointer;
+
+        &--prev {
+            background: svg-load("../../images/icons/left-arrow.svg");
+            left: 141px;
+        }
+
+        &--next {
+            background: svg-load("../../images/icons/right-arrow.svg");
+            right: 141px;
+        }
+    }
+}
+
+@media (max-width: 998px) {
+    .news {
+        &__slide-control--prev {
+            left: 50px;
+        }
+        
+        &__slide-control--next {
+            right: 50px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .news {
+        .news__slide-control--prev {
+            left: 150px;
+            top: auto;
+            bottom: 20px;
+        }
+        
+        .news__slide-control--next {
+            right: 150px;
+            top: auto;
+            bottom: 20px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .news {
+        .news__slide-control--prev {
+            left: 10px;
+        }
+        
+        .news__slide-control--next {
+            right: 10px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .news {
+        &__content {
+            margin-bottom: 20px;
+        }
+
+        &__slide-control {
+            display: none !important;
+        }
+    }
+}

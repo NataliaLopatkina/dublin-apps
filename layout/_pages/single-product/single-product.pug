@@ -1,0 +1,145 @@
+extends ../../_blocks/template/template.pug
+
+block data
+
+    -
+        var data = {
+            nav: {
+                activeElement: "Leopards media",
+            },
+        }
+
+block content
+    div(class="box")
+        include ../../_blocks/search/search.pug
+        -
+            var search = [
+                {
+                    title: "Dublin’s iphone apps Online Demmonstration",
+                    text: "Lorem Ipsum is simply dummy",
+                }
+            ]
+
+        each item in search
+            +search(item)
+
+        div(class="passages passages--single-product")
+            div(class="passages__content")
+                div(class="passages__block-text")
+                    h2(class="subtitle passages__title") There are many variations of passages
+                    p(class="text passages__text") Lorem Ipsum is simply dummy
+
+                div(class="passages__variation-block")
+                    div(class="passages__image-block")
+                        img(class="passages__img" src="images/i-pad/passages-ipad.png" srcset="images/i-pad/passages-ipad@2x.png 2x" alt="ipad")
+
+                    div(class="passages__variation")    
+                        div(class="passages-list")
+                            include ../../_blocks/passages-item/passages-item.pug
+                            
+                            -
+                                var passages = [
+                                    {
+                                        text: "Lorem Ipsum is simply dummy text of the printing and typesetting",
+                                    },
+
+                                    {
+                                        text: "Industry. Lorem Ipsum has been the industry's standard",
+                                    },
+
+                                    {
+                                        text: "Dummy text ever since the 1500s, when an unknown printer",
+                                    },
+
+                                    {
+                                        text: "Took a galley of type and scrambled it to make a type specimen book.",
+                                    },
+
+                                    {
+                                        text: "It has survived not only five centuries, but also the",
+                                    },
+
+                                    {
+                                        text: "Dummy text ever since the 1500s, when an unknown printer",
+                                    }
+                                ]
+
+                            each item in passages
+                                +passages-item(item)
+
+        div(class="steps-passages box__content steps-passages--indent")
+            div(class="steps-passages__content")
+                div(class="steps")
+                    span(class="steps__line")
+                    div(class="steps__quality")
+                        span(class="steps__number") 1
+                        span(class="steps__number steps__number--active") 2
+                        span(class="steps__number") 3
+                        span(class="steps__number") 4
+
+                div(class="passages")
+                    div(class="passages__content passages__content--indent")
+                        div(class="passages__block-text passages__block-text--align")
+                            h3(class="subtitle passages__title") There are many variations of passages
+                            p(class="text passages__text") Lorem Ipsum is simply dummy
+
+                div(class="passages-actions")
+                    ul(class="list passages-actions__list")
+                        li(class="passages-actions__item")
+                            button(type="button" class="passages-actions__button")
+                                img(class="passages-actions__img passages-actions__img--play" src="images/icons/passages-play.svg" alt="Play")
+
+                        li(class="passages-actions__item")
+                            button(type="button" class="passages-actions__button")
+                                img(class="passages-actions__img" src="images/icons/pause.svg" alt="Pause")
+
+                        li(class="passages-actions__item")
+                            button(type="button" class="passages-actions__button")
+                                span(class="passages-actions__icon-text passages-actions__img passages-actions__img--i") i
+
+                div(class="steps-passages__text-block")
+                    h3(class="subtitle steps-passages__title") Play now
+                    p(class="text text--color steps-passages__text") Lorem ipsum dolor sit amet, consectetuadipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliua. Ut enim ad minim veniam, quis nostud exercitation ullamco laboris nisi ut aluip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+                div(class="passages")
+                    div(class="passages__content passages__content--variations")
+                        div(class="passages__block-text")
+                            h3(class="subtitle passages__title") There are many variations of passages
+
+                        div(class="passages__variation-block")
+                            div(class="passages__image-block")
+                                img(class="passages__img" src="images/i-pad/ipad-3.png" srcset="images/i-pad/ipad-3@2x.png 2x" alt="ipad")
+
+                            div(class="passages__variation")
+                                div(class="passages-list")
+                                    include ../../_blocks/passages-item/passages-item.pug
+                                    
+                                    -
+                                        var passages = [
+                                            {
+                                                text: "Lorem Ipsum is simply dummy text of the printing and typesetting",
+                                            },
+
+                                            {
+                                                text: "Industry. Lorem Ipsum has been the industry's standard",
+                                            },
+
+                                            {
+                                                text: "Dummy text ever since the 1500s, when an unknown printer",
+                                            },
+
+                                            {
+                                                text: "Took a galley of type and scrambled it to make a type specimen book.",
+                                            },
+                                        ]
+
+                                    each item in passages
+                                        +passages-item(item)
+
+                                div(class="passages__action")
+                                    a(href="" class="button button--size-m passages__button product-sale__link-buy passages__button--l") Buy now
+                                    button(type="button" class="button button--size-m passages__button passages__button--l button--color-l") Download
+
+block modal-window
+    include ../../_blocks/modal-payment/modal-payment.pug
+    include ../../_blocks/modal-operation/modal-operation.pug

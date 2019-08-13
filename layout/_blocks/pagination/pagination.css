@@ -1,0 +1,15 @@
+@import "../pagination-item/pagination-item.css";
+
+.pagination {
+    width: 473px;
+    margin: 0 auto;
+    display: flex;
+}
+
+@media (max-width: 576px) {
+    .pagination {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

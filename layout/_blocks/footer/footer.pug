@@ -1,0 +1,47 @@
+footer(class="footer")
+    div(class="content footer__content")
+        div(class="footer__twitter")
+            div(class="footer__img")
+                svg(class="footer__twitter-icon")
+                    use(xlink:href="images/svg-sprite/svg-sprite.svg#footer-icon")
+            div(class="footer__text-content")
+                p(class="footer__text") Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text  of the printing and typesetting industry.
+                p(class="footer__signature") - versions of Lorem Ipsum.
+
+        div(class="footer-form")
+            div(class="newsletter")
+                p(class="newsletter__title") Newsletter
+                p(class="newsletter__text") Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                form(class="newsletter__form" method="get" action="#5")
+                    input(class="field-text newsletter__field-text" type="text" placeholder="enter your email address")
+                    button(class="form-button newsletter__button" type="submit") Subscribe
+
+            div(class="contacts-form")
+                p(class="contacts-form__title") Contact form
+                form(class="contacts-form__form" method="get" action="#5")
+                    div(class="contacts-form__group-field-text")
+                        input(class="field-text contacts-form__field-text" type="text")
+                        input(class="field-text contacts-form__field-text" type="text")
+                        input(class="field-text contacts-form__field-text" type="text")
+                    textarea(class="field-text field-text--multiline contacts-form__multiline-field")
+                    button(class="form-button form-button--contact contacts-form__button" type="submit") Submit
+
+        div(class="footer-social")
+            ul(class="footer-social__list")
+                li(class="footer-social__item")
+                    a(href="#5" class="footer-social__link")
+                        svg(class="footer-social__img footer-social__img--twitter")
+                            use(xlink:href="images/svg-sprite/svg-sprite.svg#twitter")
+
+                li(class="footer-social__item")
+                    a(href="#5" class="footer-social__link")
+                        svg(class="footer-social__img footer-social__img--facebook")
+                            use(xlink:href="images/svg-sprite/svg-sprite.svg#facebook")
+
+                li(class="footer-social__item")
+                    a(href="#5" class="footer-social__link")
+                        svg(class="footer-social__img footer-social__img--linkedin")
+                            use(xlink:href="images/svg-sprite/svg-sprite.svg#linkedin")
+
+        div(class="copyright")
+            p(class="copyright__text") Design by cssauthor.com © 2012-2013  Valid HTML5 and CSS3.

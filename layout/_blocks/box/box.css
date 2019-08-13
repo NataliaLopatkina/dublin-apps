@@ -1,0 +1,44 @@
+.box {
+    width: 936px;
+    margin: 0 auto;
+    background: linear-gradient(#e7e8ea, #edeeef); 
+    border-radius: 4px 4px 0 0;
+
+    &__content {
+        width: 778px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 998px) {
+    .box {
+        width: 768px;
+        padding-left: 10px;
+        padding-right: 10px;
+        box-sizing: border-box;
+
+        &__content {
+            width: 748px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .box {
+        width: 576px;
+
+        &__content {
+            width: 556px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .box {
+        width: 320px;
+
+        &__content {
+            width: 300px;
+        }
+    }
+}

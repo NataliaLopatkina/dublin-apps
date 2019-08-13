@@ -1,0 +1,21 @@
+@import "../steps/steps.css";
+@import "../passages-actions/passages-actions.css";
+
+.steps-passages {
+    border: 1px solid #d9d9da;
+    background-color: #edeeef;
+
+    &--indent {
+        margin-bottom: 26px;
+    }
+
+    &__text-block {
+        padding-left: 43px;
+        padding-right: 22px;
+        margin-bottom: 33px;
+    }
+
+    &__title {
+        margin-bottom: 16px;
+    }
+}

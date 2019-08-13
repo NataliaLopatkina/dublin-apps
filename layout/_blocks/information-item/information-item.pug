@@ -1,0 +1,7 @@
+mixin information-item(item)
+    div(class="information-item")
+        div(class="information-item__title")
+            button(class="information-item__button")
+            span(class="information-item__text") !{item.text}
+        div(class="information-item__content")
+            p(class="text text--color text--height-size-l information-item__description") !{item.description}

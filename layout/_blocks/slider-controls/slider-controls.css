@@ -1,0 +1,35 @@
+.slider-controls {
+    .slick-arrow {
+        border: none;
+        background: none;
+        font-size: 0;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: #343444;
+        opacity: 0.5;
+        position: absolute;
+        top: 50%;
+        margin-top: 4px;
+        cursor: pointer;
+        outline: none;
+
+        &:before {
+            position: absolute;
+            content: url("../images/icons/arrow.svg");
+            width: 23px;
+            height: 24px;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+    }
+    
+    .slick-next {
+        &:before {
+            transform: rotate(180deg);
+        }
+    }
+}

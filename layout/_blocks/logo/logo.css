@@ -1,0 +1,63 @@
+.logo {
+    display: flex;
+    align-items: flex-start;
+    padding-left: 10px;
+    position: relative;
+
+    &__img {
+        width: 38px;
+        height: 38px;
+        margin-right: 10px;
+    }
+
+    &__text-icon {
+        font-family: "Freeport";
+        font-size: 55px;
+        line-height: calc(52/55);
+        color: #1f1f31;
+        position: absolute;
+        top: -10px;
+        left: 26px;
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__link {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__text-title {
+        font-family: "Flare", "Times New Roman", serif;
+        font-size: 39px;
+        line-height: calc(35/39);
+        color: #ffffff;
+        margin-bottom: 2px;
+    }
+
+    &__text-subtitle {
+        font-family: "Fraklin", "Arial", sans-serif;
+        font-size: 17px;
+        line-height: calc(22/17);
+        color: #ffffff;
+    }
+}
+
+@media (max-width: 998px) {
+    .logo {
+        padding: 0;
+
+        &__text-title {
+            font-size: 31px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .logo {
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,24 @@
+block data
+
+doctype html
+html(lang="en")
+    head
+        meta(charset="utf-8")
+        meta(name="viewport", content="initial-scale=1.0, width=device-width")
+        title Dublin Apps
+        link(rel="stylesheet" href="stylesheets/common.css")
+        
+    body
+        include ../../_blocks/header/header.pug
+       
+        main(class="main")
+            block content
+
+        include ../../_blocks/footer/footer.pug
+
+        block modal-window
+
+        script(src="//code.jquery.com/jquery-1.11.0.min.js")
+        script(src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js")
+        link(rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css")
+        script(src="scripts/common.js")

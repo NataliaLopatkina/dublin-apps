@@ -1,0 +1,27 @@
+@import "../product/product.css";
+
+.tab-content {
+    margin: 0 -24px -38px 0;
+    box-sizing: border-box;
+    display: none;
+
+    &.active {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__img {
+        margin-right: 12px;
+    }
+
+    &__text {
+        margin-bottom: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .tab-content {
+        padding-left: 20px;
+        margin: -10px -10px -38px 0;
+    }
+}

@@ -1,0 +1,35 @@
+mixin nav(activeElement)
+    nav(class="nav nav--closed" )
+        ul(class="list nav__list")
+            -
+                var navList = [
+                    {
+                        text: "Home",
+                        href: "index",
+                    },
+                    {
+                        text: "ipad apps",
+                        href: "products",
+                    },
+                    {
+                        text: "Demonstrations",
+                        href: "blog",
+                    },
+                    {
+                        text: "Leopards media",
+                        href: "single-product",
+                    },
+                    {
+                        text: "Connect us",
+                        href: "contacts",
+                    },
+                ]
+
+            each item, index in navList
+
+                - var modActive = ""
+                if  activeElement == item.text
+                    - modActive = " nav__link--active"
+
+                li(class="nav__item")
+                    a(href = item.href + ".html"  class="nav__link" + modActive) !{item.text}

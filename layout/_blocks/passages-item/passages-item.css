@@ -1,0 +1,13 @@
+.passages-item {
+    position: relative;
+
+    &:before {
+        position: absolute;
+        content: "";
+        background: svg-load("../../images/icons/play.svg") no-repeat;
+        width: 20px;
+        height: 20px;
+        top: 8px;
+        left: -25px;
+    }
+}
